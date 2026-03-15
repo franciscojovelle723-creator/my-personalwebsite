@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Background image with overlay gradient */
+    background: 
+        linear-gradient(135deg, rgba(127,0,255,0.5), rgba(225,0,255,0.5)),
+        url('aslepic/bc.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* LOGIN FORM */
+.login-container {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #ffd6ff;
+    color: #7F00FF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #ffb3ff;
+}
+
+.error-msg {
+    color: #ffaaaa;
+    margin-bottom: 10px;
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+    <h2>♥L♥O♥G♥ I♥N♥</h2>
+    <div class="error-msg" id="error-msg">Invalid username or password</div>
+    <input type="text" id="username" placeholder="𝓤𝓼𝓮𝓻𝓷𝓪𝓶𝓮" required>
+    <input type="password" id="password" placeholder="𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭" required>
+    <button onclick="login()">♥L♥o♥g♥i♥n♥</button>
+</div>
+
+<script>
+function login() {
+    const validUsername = "ashley";
+    const validPassword = "12345";
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const errorMsg = document.getElementById("error-msg");
+
+    if(username === validUsername && password === validPassword){
+        window.location.href = "index.html";
+    } else {
+        errorMsg.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+    color: white; 
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd6ff;
+}
+
+/* SECTION */
+section {
+    padding: 80px 50px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HERO CENTERED */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.hero-text h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 500px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: 50px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px 20px;
+    background: white;
+    color: #7F00FF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd6ff;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">𝐀𝓼ⓗ𝕃𝑒ץ</div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+    <div class="hero-text">
+        <h1>Hello, I'm Ashley Azarcon</h1>
+    </div>
+
+    <img src="mypic.jpg" alt="Ashley" class="profile-pic">
+
+</section>
+
+<!-- SERVICES -->
+<section id="work">
+
+<div class="services">
+
+<div class="card">
+<h3></h3>
+<p></p>
+</div>
+
+<div class="card">
+<h3></h3>
+<p></p>
+</div>
+
+<div class="card">
+<h3></h3>
+<p></p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Ashley J. Azarcon | All Rights Reserved
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight - 100;
+
+        if(sectionTop < triggerPoint){
+            section.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Achievements</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd6ff;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Achievements Section */
+.achievements {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.achievement img {
+    width: 500px;
+    border-radius: 20px;
+    border: 4px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.desc {
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 20px;
+    max-width: 400px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.achievement:hover .desc {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+/* Alternate left/right */
+.achievement.left {
+    flex-direction: row;
+}
+
+.achievement.right {
+    flex-direction: row-reverse;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: auto;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">𝐀𝓼ⓗ𝕃𝑒ץ</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<br>
+<h1 class="title">𝐌𝐲 𝐀𝐜𝐡𝐢𝐞𝐯𝐞𝐦𝐞𝐧𝐭𝐬</h1>
+<br>
+<hr>
+
+<div class="achievements">
+
+   
+
+    <!-- Achievement 1 -->
+    <div class="achievement right">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\ca2f2e8a-0d28-4a6d-828b-685bbb2a91ff.jpg" alt="Ashley">
+        <div class="desc">Graduating Grade 6 during the COVID-19 lockdown wasn’t easy, online classes and home learning were challenging, but it taught me to adapt, stay positive, and treasure every memory, big or small. This milestone reminds me that even challenges can become unforgettable lessons.</div>
+    </div>
+<br>
+<hr>
+    
+<!-- Achievement 2 -->
+    <div class="achievement left">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\34dc63c4-0e96-47c9-92f8-aebf96b803ce.jpg" alt="Ashley">
+        <div class="desc">Moving up from Grade 10 was a special moment I shared with my parents, who guided and supported me every step of the way. This milestone celebrates not just my growth and achievements, but also the love, encouragement, and sacrifices of my family.</div>
+    </div>
+
+<br>
+<hr>
+
+    <!-- Achievement 3 -->
+    <div class="achievement right">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\0d73e017-bca0-4848-95c1-b3a0d859f852.jpg" alt="Ashley">
+        <div class="desc">Grade 10 moving up marks the end of one chapter and the beginning of new adventures. It’s a time to celebrate achievements, memories, and the lessons that prepared me for the future.</div>
+    </div>
+
+<br>
+<hr>
+
+    <!-- Achievement 4 -->
+    <div class="achievement left">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\645048275_1163541675717848_2456722755271601881_n.jpg" alt="Ashley">
+        <div class="desc">Successfully defended our research project, demonstrating teamwork, critical thinking, and thorough understanding of the topic.</div>
+    </div>
+
+<br>
+<hr>
+
+</div>
+
+<footer>
+    &copy; 2026 Ashley Azarcon | All Rights Reserved
+</footer>
+
+</body>
+</html>

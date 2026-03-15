@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #7F00FF, #E100FF);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd6ff;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* FAMILY SECTION */
+.family {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.family img {
+    width: 300px;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.family img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* BIO */
+.bio {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: auto;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">𝐀𝓼ⓗ𝕃𝑒ץ</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<!-- ABOUT ME FIRST -->
+<div class="title">
+    <h1>𝐀𝐁𝐎𝐔𝐓 𝐌𝐄</h1>
+</div>
+
+<div class="bio">
+<p>
+Hi! I’m Ashley, a high school student who loves learning new skills like computer programming and playing badminton. 
+I enjoy exploring new things, being creative, and working with others in different projects. Welcome to my portfolio!
+</p>
+</div>
+<br>
+<hr>
+
+<!-- FAMILY SECTION -->
+<div class="title">
+    <h1>𝐌𝐲 𝐅𝐚𝐦𝐢𝐥𝐲</h1>
+</div>
+<hr>
+
+<div class="family">
+<img src="C:\Users\Teacher\Desktop\Ashley\aslepic\7a25b550-f71f-4672-a637-ba0736ada693.jpg" alt="Ashley">
+<img src="C:\Users\Teacher\Desktop\Ashley\aslepic\607498542_1547744823099955_3308049452924936711_n.jpg" alt="Ashley">
+</div>
+<hr>
+<!-- Hobbies / Interests -->
+<div class="title">
+    <h2>𝐇𝐨𝐛𝐛𝐢𝐞𝐬 & 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭𝐬</h2>
+</div>
+<hr>
+<div class="cards">
+    <div class="card">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\607498542_1547744823099955_3308049452924936711_n(1).jpg" alt="Badminton">
+        <h3>Badminton</h3>
+        <p>I enjoy playing badminton because it keeps me active, improves focus, and enhances coordination.</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\download.webp" alt="Coding">
+        <h3>Programming</h3>
+        <p>Learning programming allows me to build websites and projects, and develop logical thinking skills.</p>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\download (1).jpg" alt="Reading">
+        <h3>Reading</h3>
+        <p>I love reading books because it expands my imagination, improves my vocabulary, and helps me learn new things every day.</p>
+    </div>
+</div>
+
+<!-- Education -->
+<hr>
+<div class="title">
+    <h2>𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧</h2>
+</div>
+<hr>
+<div class="cards">
+    <div class="card">
+        <h3>School</h3>
+        <p>Taal High School</p>
+    </div>
+    <div class="card">
+        <h3>Grade</h3>
+        <p>11</p>
+    </div>
+    <div class="card">
+        <h3>Favorite Subject</h3>
+        <p>Computer Programming</p>
+    </div>
+</div>
+<hr>
+<!-- Fun Facts -->
+<div class="title">
+    <h2>𝐅𝐮𝐧 𝐅𝐚𝐜𝐭𝐬</h2>
+</div>
+<hr>
+<div class="cards">
+    <div class="card">
+        <h3>Favorite Dish</h3>
+        <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\adobo.jpg" alt="Cat" />
+        <p>Adobo 🍽️</p>
+    </div>
+    <div class="card">
+        <h3>Favorite Color</h3>
+        <img src="aslepic/tulipsss.jpg" alt="tulips" />
+        <p>Purple 💜</p>
+    </div>
+    <div class="card">
+    <h3>Pet</h3>
+    <img src="C:\Users\Teacher\Desktop\Ashley\aslepic\download.jpg" alt="Cat" />
+    <p>Cat named Peanut 🐱</p>
+</div>
+</div>
+<hr>
+<footer>
+© 2026 Ashley J. Azarcon | All Rights Reserved
+</footer>
+
+</body>
+</html>
